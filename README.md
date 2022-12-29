@@ -1,2 +1,1 @@
-# kouizine-rpg
-Jeu RPG codé en HTML / CSS / JAVASCRIPT
+# RPG_FRONT

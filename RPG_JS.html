@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <title>RPG JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type ="text/css" href="dialogue.css">
+        <link rel="shortcut icon" href="pizza.ico">
+    </head>
+    <body>
+        <div id="menu">
+            <button id="start"></button>
+            <button id="credit"></button>
+            <button id="quit"></button>
+        </div>
+        <div id="screen">
+        <canvas id = "game"></canvas>
+        </div>
+        <div id = "dialogue">
+            <div class="fight">
+                <div class="text" id="pText" onclick="choice()"></div>
+                <div class="text" id="pText3" onclick="choice3()"></div>
+            </div>
+            <div class="fight">
+                <div class="text" id="pText2" onclick="choice2()"></div>
+                <div class="text" id="pText4" onclick="choice4()"></div>
+            </div class="fight">
+                <div class="text" id="pText5" onclick="choice5()"></div>
+
+            </div>
+        </div>
+        <audio id="son" loop="loop" autoplay="autoplay">
+            <source src="musique/Main_HxH_WhaleIsland.mp3"/>
+        </audio>
+        </div>
+        <div id= "perso" onclick="son()">
+        <img id="profilimage" src="image/Sanji1.png" />   
+        </div>
+        <div id="inventaire">
+            <div class="inventaire">
+                <img id ="pate" src="image/icons8-x-100.png" alt="pate" >
+            </div>
+            <div class="inventaire">
+                <img id ="fromage" src="image/icons8-x-100.png" alt="fromage">
+            </div>
+            <div class="inventaire">
+                <img id ="tomate" src="image/icons8-x-100.png" alt="tomate">                
+            </div>
+        </div> 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="change_map.js"></script>
+        <script src="collisions.js"></script>
+        <script src="player3.js"></script>
+        
+
+    </body>
+    
+</html>
